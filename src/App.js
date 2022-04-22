@@ -51,7 +51,7 @@ function handleSaveTask(newTask){
     return item
   });
   setTodos(newTodos);
-  setModal(false)
+  setModal(false);
 
 }
 
