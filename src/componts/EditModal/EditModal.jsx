@@ -6,20 +6,19 @@ import './EditModal.css'
 
 const EditModal = (props) => {
  let [item,setItem] = useState(props.editTodo)
+ 
 function handleEditInput(e){
-   setItem (e.target.value);
-}
-
-function handleEditInput(e){
-  let newObj ={...item}
-  newObj.task = e.target.value
+   let newObj ={...item}
+   newObj.task = e.target.value
    setItem(newObj)
-
 }
 
 function handleSave(){
+  
 props.handleSaveTask(item)
-}
+ }
+ 
+
     return (
         <div className='main-modal'>
             <div className='inner-modal'>

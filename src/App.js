@@ -58,6 +58,7 @@ function handleSaveTask(newTask){
 
 
 
+
   return (
     <>
     {/* <Like/>
@@ -77,6 +78,7 @@ function handleSaveTask(newTask){
       editTodo={editTodo}
       // handleTask ={handleTask}
       handleSaveTask={handleSaveTask}
+      handleTask={handleTask}
      />
       : null}
     
